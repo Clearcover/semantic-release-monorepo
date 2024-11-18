@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   dependency-review:
-    runs-on: self-hosted
+    runs-on:
+      group: cc-self-hosted
     steps:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
